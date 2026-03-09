@@ -1,155 +1,485 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
-<head> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4531257337326657"
-     crossorigin="anonymous"></script>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F3T0NFP6BR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <!-- original scripts & meta kept, plus modern additions -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4531257337326657" crossorigin="anonymous"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3T0NFP6BR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F3T0NFP6BR');
+  </script>
+  <title>Lebolistic Beauty Palace | About</title>
+  <meta name="description" content="LEBOLISTIC BEAUTY PALACE academy & spa – expert training, nail technology, massage, makeup. Welcome to our beautiful world.">
+  <meta name="keywords" content="Beauty Parlour, beauty academy, massage parlour, facial make up, nails training, nails technician">
+  <meta name="google-adsense-account" content="ca-pub-4531257337326657">
+  <!-- Google Font & Icons for modern look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  gtag('config', 'G-F3T0NFP6BR');
-</script>
-	<title>LEBOLISTIC BEAUTY PALACE</title>
-	<meta name="description" content="LEBOLISTIC BEAUTY PALACE">
-	<meta name="keywords" content="Beauty Parlour, beauty academy, massage parlour,massage, facial make up, nails training, nails technician">
-	<meta name="google-adsense-account" content="ca-pub-4531257337326657">
-	<style type="text/css">
-		#a{
-			width: 600px;
-			border-radius: 5px;
-		}
-		#home{
-			margin-right: 20px;
-		}
-		#beauty{
-			margin-right: 20px;
-		}
-		#home:hover{
-			color: greenyellow;
-			cursor: pointer;
-			opacity: 0.6;
-			transition: 0.18s;
-			background: black;
-		}
-		#beauty:hover{
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fcfaf7;
+      color: #1f2937;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
 
-			color: greenyellow;
-			cursor: pointer;
-			opacity: 0.6;
-			transition: 0.18s;
-			background: black;
-		}
-		#cont:hover{
+    /* animated gradient header */
+    .hero-header {
+      background: linear-gradient(-45deg, #4a1d4a, #2c3e2c, #7d4e7d, #1f4f2b);
+      background-size: 300% 300%;
+      animation: gradientShift 14s ease infinite;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: white;
+      border-bottom-left-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+      box-shadow: 0 15px 30px -10px rgba(0,40,0,0.3);
+    }
 
-			color: greenyellow;
-			cursor: pointer;
-			opacity: 0.6;
-			transition: 0.18s;
-			background: black;
-		}
-		h4{
-			color: white;
-			background: purple;
-			text-decoration: underline;
-			font-size: 30px;
-		}
-		body{
-			color: darkgrey;
-			align-items: center;
-			text-align: center;
-		}
-		footer{
-			color: white;
-			background-color: black;
-		}
-		#buzz:hover{
-			color: red;
-			opacity: 0.6;
-			transition: 1.9s;
-			cursor: pointer;
-			background-color: blue;
-			
-		}
-	</style>
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .hero-header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      animation: floatTitle 3s ease-in-out infinite;
+    }
+
+    @keyframes floatTitle {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .hero-header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0.75rem auto 0;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(4px);
+      padding: 0.5rem 1.5rem;
+      border-radius: 60px;
+      display: inline-block;
+    }
+
+    /* modern navigation pill */
+    .nav-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem 1.5rem;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    .nav-pills a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.6rem 1.8rem;
+      border-radius: 60px;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.3);
+      transition: 0.25s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-pills a:hover {
+      background: #b2f0b2;
+      color: #1a3a1a;
+      border-color: #9be69b;
+      transform: scale(1.05) translateY(-3px);
+      box-shadow: 0 15px 20px -10px #9be69b80;
+    }
+
+    /* main container */
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    /* section titles with animated underline */
+    .section-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 2.5rem 0 2rem;
+      position: relative;
+      background: linear-gradient(135deg, #3f2b3f, #2f582f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 120px;
+      height: 5px;
+      background: linear-gradient(90deg, #9f6f9f, #6fa06f);
+      margin: 0.7rem auto 0;
+      border-radius: 8px;
+      animation: pulseWidth 4s infinite;
+    }
+
+    @keyframes pulseWidth {
+      0%,100% { width: 120px; opacity: 0.7; }
+      50% { width: 200px; opacity: 1; }
+    }
+
+    /* video cards */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .video-card {
+      background: white;
+      border-radius: 2rem;
+      overflow: hidden;
+      box-shadow: 0 25px 40px -18px #1f3f1f;
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      border: 1px solid #f0e4e4;
+    }
+
+    .video-card:hover {
+      transform: scale(1.02) translateY(-8px);
+      box-shadow: 0 35px 50px -18px #2d6a2d;
+    }
+
+    .video-card video {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+      background: #2b2b2b;
+    }
+
+    .video-caption {
+      padding: 1.5rem 1.5rem 1.8rem;
+      font-weight: 600;
+      background: #fdfbfb;
+    }
+
+    .video-caption i {
+      color: #7b4d7b;
+      margin-right: 0.5rem;
+    }
+
+    /* BEAUTIFUL IMAGE GRID (masonry style) */
+    .grid-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.8rem;
+      margin: 3rem 0;
+    }
+
+    .grid-item {
+      position: relative;
+      border-radius: 2rem;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      box-shadow: 0 20px 25px -10px rgba(0,0,0,0.1);
+      transition: 0.35s ease;
+      cursor: pointer;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.02) rotate(0.5deg);
+      box-shadow: 0 30px 40px -10px #3f7a3f;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s;
+    }
+
+    .grid-item:hover img {
+      transform: scale(1.1);
+    }
+
+    /* overlay effect on grid */
+    .grid-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(60,30,60,0.5) 0%, transparent 70%);
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem;
+      color: white;
+      font-weight: 600;
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 1.3rem;
+    }
+
+    .grid-item:hover .grid-overlay {
+      opacity: 1;
+    }
+
+    /* description paragraphs with icons */
+    .text-block {
+      background: white;
+      padding: 2rem 2rem;
+      border-radius: 3rem;
+      margin: 2rem 0;
+      box-shadow: inset 0 2px 8px rgba(255,255,240,0.5), 0 15px 30px -12px #ccc;
+      border: 1px solid #ffeaea;
+    }
+
+    .text-block p {
+      font-size: 1.15rem;
+      color: #2d2d2d;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .text-block i {
+      font-size: 2rem;
+      min-width: 2.5rem;
+      color: #8a6f8a;
+    }
+
+    /* link / button animations */
+    .special-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: linear-gradient(135deg, #3b1f3b, #2a5a2a);
+      color: white;
+      padding: 1rem 2.8rem;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin: 1.5rem 0 2rem;
+      box-shadow: 0 12px 18px -8px #4d8b4d;
+      transition: 0.25s;
+      text-decoration: none;
+    }
+
+    .special-link:hover {
+      background: linear-gradient(145deg, #5b2c5b, #3d7a3d);
+      transform: scale(1.06) rotate(-1deg);
+      box-shadow: 0 22px 28px -8px #215f21;
+    }
+
+    .special-link i {
+      font-size: 1.8rem;
+      animation: bounce 1.8s infinite;
+    }
+
+    @keyframes bounce {
+      0%,100% { transform: translateX(0); }
+      50% { transform: translateX(8px); }
+    }
+
+    /* footer refined */
+    .footer {
+      background: #101010;
+      color: #b5b5b5;
+      padding: 2rem 1.5rem 1.5rem;
+      border-radius: 4rem 4rem 0 0;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-links a {
+      color: #ddc7dd;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: #c2f2c2;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1.8rem;
+      font-size: 2rem;
+      margin: 1.5rem 0 1rem;
+    }
+
+    .social-icons a {
+      color: #ab8fab;
+      transition: 0.2s;
+    }
+
+    .social-icons a:hover {
+      color: #ade6ad;
+      transform: translateY(-5px);
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #c9b1c9, #96c096, transparent);
+      margin: 2rem 0;
+    }
+
+    /* mobile fine-tune */
+    @media (max-width: 600px) {
+      .hero-header h1 { font-size: 2rem; }
+      .section-title { font-size: 2rem; }
+      .grid-gallery { grid-template-columns: 1fr; }
+      .video-grid { grid-template-columns: 1fr; }
+    }
+
+    /* animation on scroll? we'll add simple fade for blocks */
+    .fade-in {
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(15px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* original images class #a replaced by grid, but we keep aspect */
+  </style>
 </head>
 <body>
-	<h4>Lebolistic Beauty Academy & Spar</h4><br><br>
-	
-	<a id="home" href="index.html">Home</a>
-	<a id="beauty" href="beauty.html">Beauty Spar</a>
-	<a id="cont" href="contacts.html">Contacts</a>
-	<br>
-	<br>
-	<hr>
-	<br>
-	<h4>About Us</h4><br><br>
+  <div class="hero-header">
+    <h1>✨ Lebolistic Beauty Palace ✨</h1>
+    <p>Academy & Luxury Spa – Vereeniging</p>
+    <!-- modern pill navigation -->
+    <div class="nav-pills">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="beauty.html"><i class="fas fa-spa"></i> Beauty Spa</a>
+      <a href="contacts.html"><i class="fas fa-address-book"></i> Contacts</a>
+    </div>
+  </div>
 
-	<br>
-	<video width="700" controls>
-		<source src="video/baba.mp4" type="video/mp4">
-	</video><br>
-	<br>
-	<strong>Our Academy</strong><br>
-	<br>
-<p>
-Welcome to Lebolistic Beauty Palace and Training Academy, your premier destination for all things beauty in Vereeniging. With over a decade of expertise in <br>Beauty Therapy, we pride ourselves on offering top-notch services and professional training to help you look and feel your best.<br><br>
-<a href="images/ma.jpeg"><img id="a" src="images/ma.jpeg"></a><br>
-<br>
+  <div class="container">
+    <!-- section about (with animation class) -->
+    <div class="section-title fade-in">About Us</div>
 
-At Lebolistic Beauty Palace and Training Academy, we specialize in a range of services designed to enhance your natural beauty and elevate your confidence.<br> Whether you're looking for flawless nails with our Nail Technology expertise, captivating eye lashes, stunning makeup application, rejuvenating foot scrubs,<br> soothing body massages, or precise waxing, we have you covered.<br><br>
-<a href="images/me.jpeg"><img id="a" src="images/me.jpeg"></a><br>
-<br>
+    <!-- video grid (2 videos side by side) -->
+    <div class="video-grid">
+      <div class="video-card">
+        <video controls><source src="video/baba.mp4" type="video/mp4"></video>
+        <div class="video-caption"><i class="fas fa-play-circle"></i> Welcome to our academy</div>
+      </div>
+      <div class="video-card">
+        <video controls><source src="video/amai.mp4" type="video/mp4"></video>
+        <div class="video-caption"><i class="fas fa-star"></i> Nail tech excellence</div>
+      </div>
+    </div>
 
+    <!-- BEAUTIFUL IMAGE GRID (using all the images from original) -->
+    <div class="grid-gallery">
+      <div class="grid-item"><img src="images/ma.jpeg" alt="beauty treatment"><span class="grid-overlay">🌸 Makeup</span></div>
+      <div class="grid-item"><img src="images/me.jpeg" alt="facial"><span class="grid-overlay">💆 Facial</span></div>
+      <div class="grid-item"><img src="images/mi.jpeg" alt="nail art"><span class="grid-overlay">💅 Nail art</span></div>
+      <div class="grid-item"><img src="images/hu.jpeg" alt="massage"><span class="grid-overlay">💆 Massage</span></div>
+      <div class="grid-item"><img src="images/he.jpeg" alt="training"><span class="grid-overlay">📚 Training</span></div>
+      <div class="grid-item"><img src="images/hi.jpeg" alt="waxing"><span class="grid-overlay">✨ Waxing</span></div>
+      <div class="grid-item"><img src="images/ha.jpeg" alt="students"><span class="grid-overlay">🎓 Our students</span></div>
+      <!-- additional, but we also have 'no' from slider? i'll add extra variety if exist but not needed; keeping original names.  -->
+    </div>
 
-Our academy isn't just a place to receive exceptional beauty treatments – it's also a hub for learning and growth. Our comprehensive training programs provide<br> aspiring beauty professionals with the knowledge and skills they need to excel in the industry. Whether you're a novice or looking to advance your career,<br> our experienced instructors are dedicated to helping you achieve your goals.<br><br>
-<a href="images/mi.jpeg"><img id="a" src="images/mi.jpeg"></a><br>
-<br>
-	<a id="buzz" href="https://youtube.com/shorts/61RRutT5Hxc">Pedicure Video</a><br>
-	Click on this link to watch more videos on our channel.<br><br>
+    <!-- rich text with floating icons (enhanced paragraphs) -->
+    <div class="text-block">
+      <p><i class="fas fa-crown"></i> With over a decade of expertise in Beauty Therapy, we pride ourselves on offering top‑notch services and professional training.</p>
+      <p><i class="fas fa-hand-sparkles"></i> Nail Technology • Eyebrow & Lashes • Makeup artistry • Foot scrubs • Body massage • Waxing</p>
+      <p><i class="fas fa-globe-africa"></i> Students from across Africa are welcome – international institution embracing diversity.</p>
+      <p><i class="fas fa-map-pin"></i> Heart of Vereeniging CBD, near taxi rank, accommodation & entertainment.</p>
+    </div>
 
+    <!-- animated link (youtube channel) -->
+    <center>
+      <a class="special-link" href="https://youtube.com/shorts/61RRutT5Hxc" target="_blank">
+        <i class="fab fa-youtube"></i> Watch Pedicure Video
+      </a>
+      <p style="margin-top: -1rem; opacity: 0.8;">Click for more videos on our channel ✨</p>
+    </center>
 
-In addition to our academy, we also operate a luxurious beauty spa where you can indulge in our array of services in a serene and welcoming environment. <br>Whether you're visiting us for a training session or a pampering session, our friendly and skilled team is committed to ensuring your experience with us is <br>nothing short of exceptional.<br><br>
-<br>
-<a href="images/hu.jpeg"><img id="a" src="images/hu.jpeg"></a><br><br>
+    <!-- second video card embedded elegantly (original second video) but we already have both in video-grid, but to respect structure we keep text block as below: -->
+    <div style="margin: 2.5rem 0;">
+      <div class="video-card" style="max-width: 700px; margin: 0 auto;">
+        <video controls><source src="video/amai.mp4" type="video/mp4"></video>
+        <div class="video-caption"><i class="fas fa-gem"></i> Nail advisors & graduate showcase</div>
+      </div>
+    </div>
 
-Experience the difference with Lebolistic Beauty Palace and Training Academy – where beauty meets expertise and excellence is our standard. Join us on your <br>journey to beauty and self-discovery today.<br><br>
-<a href="images/he.jpeg"><img id="a" src="images/he.jpeg"></a><br>
-<br>
+    <!-- extra description using original paragraphs but modernized -->
+    <div class="text-block" style="background: #f8f2f8;">
+      <p><i class="fas fa-graduation-cap"></i> Our Nail technical advisors are the best with the latest trending nails in fashion being our curriculum. Our students graduate with honours.</p>
+      <p><i class="fas fa-hand-holding-heart"></i> Affordable fees and easy payment plans. We also operate a luxurious beauty spa for your indulgence.</p>
+      <p><i class="fas fa-smile"></i> Join us on your journey to beauty and self‑discovery today.</p>
+    </div>
 
-<a href="images/hi.jpeg"><img id="a" src="images/hi.jpeg"></a><br>
-<br>
-<a href="images/ha.jpeg"><img id="a" src="images/ha.jpeg"></a><br>
-<br>
-	<br>
-	
-	<br>
-	<video width="700" height="500" controls>
-		<source src="video/amai.mp4" type="video/mp4">
-	</video><br><br>
-	Our Nail technical advisors are the best with the latest trending nails in fashion being our curriculuum. Our students graduate with honours.<br>
-All students are welcome from across Africa, we are an internation institution embracing students from all walks of life with different back-grounds. Our <br>fees are affordable and we offer an easy payment plan for those that are in need of it. We are strategically situated in the heart of Vereening CBD with easy<br> access to taxi rank, entertainment places and accomodation centres.<br>
-<br>
-<hr>
-<br>
-</p>
+    <!-- one more grid with two images? we have already displayed all, but to keep 'hi' and 'ha' already in grid. So it's fine.  -->
 
+    <hr>
+    <!-- bottom navigation inside container (optional) -->
+    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin: 2rem 0;">
+      <a href="index.html" style="color: #3d5e3d; font-weight: 600;"><i class="fas fa-chevron-left"></i> Home</a>
+      <a href="beauty.html" style="color: #3d5e3d; font-weight: 600;">Beauty Spa <i class="fas fa-chevron-right"></i></a>
+      <a href="contacts.html" style="color: #3d5e3d; font-weight: 600;">Contacts <i class="fas fa-chevron-right"></i></a>
+    </div>
+  </div>
 
-<hr>
-<br>
-<br>
-<footer>
-	<br>
-	<a id="home" href="index.html">Home</a>
-	<a id="beauty" href="beauty.html">Beauty Spar</a>
-	<a id="cont" href="contacts.html">Contacts</a>
-	<br>
-	<br>
-	&copy Lebolistic Beauty Palace & Training Academy 2024.<br>
-	<br>
-</footer>
+  <!-- footer with animation -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="beauty.html">Beauty Spa</a>
+      <a href="contacts.html">Contacts</a>
+    </div>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div style="margin-top: 1.2rem; font-size: 0.95rem;">
+      &copy; Lebolistic Beauty Palace & Training Academy 2025. All rights reserved.
+    </div>
+    <div style="margin-top: 0.5rem; font-size: 0.8rem;">📍 Vereeniging CBD – international students welcome</div>
+  </footer>
 
+  <!-- small script to add fade class on scroll? optional but we have fade-in on titles already -->
 </body>
 </html>
