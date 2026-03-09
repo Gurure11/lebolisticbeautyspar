@@ -1,191 +1,563 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
-<head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4531257337326657"
-     crossorigin="anonymous"></script>
-	
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F3T0NFP6BR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <!-- original scripts & meta -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4531257337326657" crossorigin="anonymous"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3T0NFP6BR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F3T0NFP6BR');
+  </script>
+  <title>Lebolistic Beauty | Contact & Enrollment</title>
+  <meta name="description" content="Contact Lebolistic Beauty Academy & Spa – enrollment, WhatsApp, map, and more. Vereeniging.">
+  <!-- modern font + icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  gtag('config', 'G-F3T0NFP6BR');
-</script>
-	<title>Lebolistic Beauty Academy & Spar</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<style type="text/css">
-		body{
-			text-align: center;
-			align-items: center;
-			color: black;
-			background-image: url(images/te.jpeg);
-			background-size: cover;
-			
-		}
-		#home{
-			
-			color: darkblue;
-			margin-right: 12px;
-		}
-		#about{
-			
-			color: darkblue;
-			margin-right: 10px;
-		}
-		#home:hover{
-			cursor: pointer;
-			background-color: white;
-			color: blue;
-			transition: 0.15s;
-			opacity: 0.6;
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f2ede8;
+      color: #1f2e1f;
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: url('images/te.jpeg'); /* keep original background */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      backdrop-filter: brightness(0.96);
+    }
 
-		}
-		#about:hover{
-			cursor: pointer;
-			background-color: white;
-			color: blue;
-			transition: 0.15s;
-			opacity: 0.6;
-		}
-		#send{
-			color: white;
-			background-color: blue;
-			border-radius: 4px;
-			border: none;
-		
-		}
-		#send:hover{
-				cursor: pointer;
-				transition: 0.15s;
-				opacity: 0.6;
-				color: blue;
-				background-color: white;
+    /* overlay to improve readability */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(255, 245, 240, 0.4);
+      backdrop-filter: blur(3px);
+      z-index: -1;
+    }
 
-		}
-		#subscribe{
-			color: white;
-			border-radius: 4px;
-			border: none;
-			background-color: red;
+    /* animated header with floating characters */
+    .contact-header {
+      background: linear-gradient(125deg, #2f3e2f, #6d4b6d, #3b5f4b, #7d557d);
+      background-size: 250% 250%;
+      animation: gradientFlow 15s ease infinite;
+      padding: 2.2rem 1.5rem;
+      text-align: center;
+      color: white;
+      border-bottom-left-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 30px -8px #402f40;
+    }
 
-		}
-		#subscribe:hover{
-			color: red;
-			background-color: white;
-			opacity: 0.6;
-			transition: 0.15s;
-			cursor: pointer;
-		}
-		h4{
-			background-color: black;
-			color: white;
-			display: block;
-			font-size: 30px;
-		}
-		p{
-			font-weight: bold;
-		}
-		#face{
-			width: 30px;
-			border-radius: 7px;
-		}
-		#whats{
-			width: 30px;
-			border-radius: 5px;
-		}
-		#whats:hover{
-			cursor: pointer;
-			transition: 0.17s;
-			opacity: 0.7;
-		}
-		#map{
-			color: white;
-		}
-		#map:hover{
-			color: greenyellow;
-			opacity: 0.6;
-			transition: 1.8s;
-			cursor: pointer;
-			background-color: orangered;
-		}
-		#face:hover{
-			opacity: 0.7;
-			cursor: pointer;
-		}
-	</style>
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* animated bubbles / characters */
+    .contact-header::before, .contact-header::after {
+      content: "💬";
+      font-size: 3.5rem;
+      position: absolute;
+      opacity: 0.25;
+      animation: drift 12s infinite alternate ease-in-out;
+      pointer-events: none;
+    }
+    .contact-header::before {
+      top: 0;
+      left: 3%;
+      content: "📱";
+      animation: drift 14s infinite reverse;
+    }
+    .contact-header::after {
+      bottom: -10px;
+      right: 5%;
+      content: "💅";
+      font-size: 4rem;
+      animation: drift 16s infinite;
+    }
+
+    @keyframes drift {
+      0% { transform: translateY(0px) rotate(0deg); }
+      100% { transform: translateY(-30px) rotate(8deg); }
+    }
+
+    .contact-header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      text-shadow: 0 4px 18px rgba(0,0,0,0.4);
+      animation: gentlePulse 3s infinite;
+    }
+
+    @keyframes gentlePulse {
+      0%,100% { text-shadow: 0 4px 12px rgba(255,255,200,0.3); }
+      50% { text-shadow: 0 12px 28px #f5e5b0; }
+    }
+
+    .contact-header p {
+      font-size: 1.3rem;
+      background: rgba(40,30,40,0.2);
+      backdrop-filter: blur(5px);
+      display: inline-block;
+      padding: 0.5rem 2rem;
+      border-radius: 60px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* nav pill */
+    .nav-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem 2rem;
+      margin: 1.8rem 0 0.5rem;
+    }
+
+    .nav-pills a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.7rem 2rem;
+      border-radius: 60px;
+      background: rgba(0,0,0,0.2);
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255,200,255,0.4);
+      transition: 0.25s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .nav-pills a:hover {
+      background: #e0bbe0;
+      color: #1a3b1a;
+      transform: translateY(-5px) scale(1.05);
+      border-color: #ffe9ff;
+      box-shadow: 0 18px 20px -14px #a5d6a5;
+    }
+
+    /* main container */
+    .container {
+      max-width: 1300px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      flex: 1;
+    }
+
+    /* modern card for form + details */
+    .contact-card {
+      background: rgba(255, 250, 245, 0.85);
+      backdrop-filter: blur(12px);
+      border-radius: 3.5rem;
+      padding: 2.8rem 2rem;
+      box-shadow: 0 30px 45px -20px #3f2f3f, 0 8px 20px rgba(0,0,0,0.1);
+      border: 1px solid rgba(255,220,255,0.4);
+      margin: 2rem 0;
+    }
+
+    .split-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 750px) {
+      .split-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    /* form styling */
+    .form-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      background: linear-gradient(130deg, #3f2740, #2d572d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .form-group label {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      color: #3d2a3d;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+      background: white;
+      border: 2px solid #eeddee;
+      border-radius: 40px;
+      padding: 0.9rem 1.5rem;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      transition: 0.2s;
+      outline: none;
+      width: 100%;
+    }
+
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: #b385b3;
+      box-shadow: 0 0 0 4px #f3d9f3;
+    }
+
+    .form-group textarea {
+      border-radius: 30px;
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .radio-group {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem 0;
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+      border: none;
+      border-radius: 60px;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      cursor: pointer;
+      transition: 0.25s;
+      border: 2px solid transparent;
+      width: 100%;
+    }
+
+    .btn-whatsapp:hover {
+      background: #128C7E;
+      transform: scale(1.02);
+      box-shadow: 0 20px 25px -10px #075e54;
+    }
+
+    .btn-submit {
+      background: #6d4b6d;
+      color: white;
+      border: none;
+      border-radius: 60px;
+      padding: 1rem 2.2rem;
+      font-weight: 600;
+      font-size: 1.2rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-right: 0.8rem;
+      border: 2px solid transparent;
+    }
+
+    .btn-submit:hover {
+      background: #4f364f;
+      transform: scale(1.02);
+    }
+
+    .btn-reset {
+      background: #aaa;
+      color: white;
+      border: none;
+      border-radius: 60px;
+      padding: 1rem 2rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn-reset:hover {
+      background: #888;
+    }
+
+    /* contact info card (right side) */
+    .info-card {
+      background: rgba(255,250,240,0.7);
+      backdrop-filter: blur(8px);
+      border-radius: 2.8rem;
+      padding: 2rem;
+      border: 1px solid #f3dff3;
+    }
+
+    .director-box {
+      background: #ffffffd6;
+      border-radius: 2rem;
+      padding: 1.8rem;
+      margin: 1.8rem 0;
+      box-shadow: 0 15px 20px -10px #cdb5cd;
+    }
+
+    .whatsapp-direct {
+      display: inline-flex;
+      align-items: center;
+      background: #25D366;
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 50px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-decoration: none;
+      gap: 0.8rem;
+      margin: 1rem 0;
+      transition: 0.2s;
+    }
+
+    .whatsapp-direct:hover {
+      background: #128C7E;
+      transform: scale(1.05) rotate(-1deg);
+    }
+
+    .map-link {
+      display: inline-block;
+      background: #3d5e3d;
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 1rem 0;
+      transition: 0.2s;
+      box-shadow: 0 10px 12px -5px #4f7a4f;
+    }
+
+    .map-link:hover {
+      background: #274227;
+      transform: translateY(-4px);
+    }
+
+    .footer {
+      background: #1b1b1b;
+      color: #c0b5c0;
+      padding: 2rem 1.5rem 1.2rem;
+      text-align: center;
+      border-radius: 3rem 3rem 0 0;
+      margin-top: 3rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-links a {
+      color: #ddc4dd;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer-links a:hover {
+      color: #c3f0c3;
+    }
+    .social-foot i {
+      font-size: 2rem;
+      margin: 0 1rem;
+      color: #af93af;
+      transition: 0.2s;
+    }
+    .social-foot i:hover {
+      color: #b7ecb7;
+      transform: translateY(-5px);
+    }
+    hr {
+      border: 1px solid #4b3b4b;
+      margin: 1.5rem 0;
+    }
+  </style>
 </head>
 <body>
-	<h4>Lebolistic Beauty Academy & Spar</h4><br>
-	<br>
-	<br>
-		<a id="home" href="index.html">Home Page</a>
-		
-		<a id="about" href="details.html">Academy</a>
-	
-		<a href="https://m.facebook.com/p/Lebolistic-Nails-100064846328270/"><img id="face" src="images/facebook.jpg"></a><br>
-	<br>
-	<hr>
-	<form action="https://formsubmit.co/lebolistic@gmail.com" method="POST">
-			<div>
-			
-			<label>Name</label>
-			<input type="text" name="firstName" placeholder="Enter first name"><br>
-			<br>
-			<label>Surname</label>
-			<input type="text" name="lastName" placeholder="Enter Surname"><br>
-			<br>
-			<label>Contact Number</label>
-			<input type="phone" placeholder="cell no."><br><br>
-			<label>Email</label>	
-			<input type="email" name="Email" placeholder="Email Adress"><br>
-				<br>
-				<label>Birthday</label>
-				<input type="date" name="birthday" placeholder="birthday">
-				<br>
-				<br>
-				<label>Course Desired</label>
-				
-					<select>
-					<option value="make up">Make up</option>
-					<option value="nails Technology">Nails Tech</option>
-					<option value="eye lashes">Eye lashes</option>
-					<option value="massages">Massage</option>
-					<option value="footscrub">Footscrub</option>
-					<option value="waxing">waxing</option>
-				</select><br><br>
-				<label>Date Of Enrollment</label>
-				<input type="Date" name="date of start">
-				<br><br>
-				<button type="submit" id="subscribe">Subscribe</button> <input type="radio" name="radio">
-				<br>
-				
-				<br>
-				<br>
-			<hr>
-			<label>Message</label>
-			<textarea type="text area" name="Message"></textarea><br>
-			<br>
-			<button id="send" input="submit">Submit</button><br>
-			<br>
-		</div><br>
-		
-	</form>
-	<br>
-	<br><p>
-	Managing Director: 	Lebo <br> 
-						+27 73 622 1875<br> <a href="https://api.whatsapp.com/send?phone=%2B27736221875&data=ARArWsDNitpWZheDda1cy78LTY1BSsjPn6c5_YJ492M1sTHf3qNvD9NDIKQxi_jQQN-PvMdjncOxTtlHWB-y1_5s_Igx-9PST05H4AMjusDB4CCMF_-stHU1mlAIxp1cleMGK6mV5_FgCKuf0aYLcvM4Vw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR35dsDp1hRv3XR7CKfl_JQFM9sFJfqnGRnaL3AUPwHv1xIcT_6wOcCfSX0"><img id="whats" src="images/whats.jpeg"></a><br>
-						19 Beaconfield Street ,<br>
-						First Floor <br>
-						Vereening, Gauteng South Africa<br>
-	<br>
-	<br>
-	<a id="map" href="https://maps.app.goo.gl/x6M4SUH4nPpCcbkm7" target="_bank">Map Click Me</a>
-	<br>
-	<br>
-	<footer>
-		&copy lebolistic beauty academy & spar 2024.
-	</footer>
+  <div class="contact-header">
+    <h1>✨ Connect with us ✨</h1>
+    <p><i class="fas fa-heart"></i> Lebolistic Beauty Academy & Spa – Vereeniging</p>
+    <div class="nav-pills">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="details.html"><i class="fas fa-graduation-cap"></i> Academy</a>
+      <a href="contacts.html"><i class="fas fa-address-book"></i> Contact</a>
+    </div>
+    <!-- floating icons already in pseudo -->
+  </div>
+
+  <div class="container">
+    <div class="contact-card">
+      <div class="split-layout">
+        <!-- LEFT: FORM -->
+        <div>
+          <div class="form-title">
+            <i class="fas fa-pen-alt"></i> Enroll / Ask via WhatsApp
+          </div>
+          <form id="whatsappForm">
+            <!-- form fields (matches original, but all will be sent via whatsapp) -->
+            <div class="form-group">
+              <label><i class="fas fa-user"></i> First name</label>
+              <input type="text" id="firstName" placeholder="Your first name" required>
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-user-circle"></i> Surname</label>
+              <input type="text" id="lastName" placeholder="Surname" required>
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-phone-alt"></i> Contact number</label>
+              <input type="tel" id="phone" placeholder="Cell no." required>
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-envelope"></i> Email</label>
+              <input type="email" id="email" placeholder="Email address">
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-calendar-alt"></i> Birthday</label>
+              <input type="date" id="birthday">
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-spa"></i> Course desired</label>
+              <select id="course">
+                <option value="Make up">Make up</option>
+                <option value="Nails Tech">Nails Tech</option>
+                <option value="Eye lashes">Eye lashes</option>
+                <option value="Massage">Massage</option>
+                <option value="Footscrub">Footscrub</option>
+                <option value="Waxing">Waxing</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-calendar-check"></i> Enrollment date</label>
+              <input type="date" id="enrollDate">
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-comment"></i> Message</label>
+              <textarea id="message" placeholder="Your questions or notes..."></textarea>
+            </div>
+            <div class="radio-group">
+              <input type="radio" name="subscribe" id="subscribeRadio" checked>
+              <label for="subscribeRadio" style="font-weight: normal;">Subscribe to updates</label>
+            </div>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <!-- important: button type="button" to avoid actual form submit -->
+              <button type="button" class="btn-whatsapp" id="sendWhatsApp">
+                <i class="fab fa-whatsapp"></i> Send to WhatsApp
+              </button>
+              <button type="reset" class="btn-reset">Reset</button>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
+              <i class="fas fa-lock"></i> Your details go directly to our WhatsApp +27 73 622 1875
+            </p>
+          </form>
+        </div>
+
+        <!-- RIGHT: CONTACT INFO + MAP + MD -->
+        <div class="info-card">
+          <h3 style="font-size: 2rem; color: #3f2e3f;">👑 Managing Director</h3>
+          <div class="director-box">
+            <p style="font-size: 1.8rem; font-weight: 700;">Lebo</p>
+            <p><i class="fas fa-phone-alt"></i> +27 73 622 1875</p>
+            <!-- direct WhatsApp link (original number) -->
+            <a href="https://api.whatsapp.com/send?phone=27736221875&text=Hello%20Lebo%2C%20I'm%20interested%20in%20Lebolistic%20Beauty" class="whatsapp-direct" target="_blank">
+              <i class="fab fa-whatsapp"></i> Chat with Lebo
+            </a>
+          </div>
+
+          <hr style="border-color: #dabdda;">
+          <p><i class="fas fa-map-marker-alt" style="color: #b345b3;"></i> <strong>19 Beaconfield Street, First Floor</strong><br>Vereeniging, Gauteng, South Africa</p>
+          <a href="https://maps.app.goo.gl/x6M4SUH4nPpCcbkm7" target="_blank" class="map-link">
+            <i class="fas fa-map"></i> Open Map
+          </a>
+
+          <hr style="border-color: #dabdda;">
+          <div style="display: flex; justify-content: center; gap: 2rem; margin: 1.5rem 0;">
+            <a href="https://m.facebook.com/p/Lebolistic-Nails-100064846328270/"><img src="images/facebook.jpg" alt="facebook" style="width: 42px; border-radius: 50%; box-shadow: 0 6px 8px #ccc;"></a>
+            <a href="https://api.whatsapp.com/send?phone=27736221875"><img src="images/whats.jpeg" alt="whatsapp" style="width: 42px; border-radius: 50%;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="details.html">Academy</a>
+      <a href="contacts.html">Contacts</a>
+    </div>
+    <div class="social-foot">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <p style="margin: 1.2rem 0 0.5rem;">&copy; Lebolistic Beauty Academy & Spa 2025</p>
+    <p style="font-size: 0.9rem;">19 Beaconfield Street, Vereeniging – we're here</p>
+  </footer>
+
+  <!-- JavaScript to send form data via WhatsApp -->
+  <script>
+    document.getElementById('sendWhatsApp').addEventListener('click', function() {
+      // fetch values
+      const firstName = document.getElementById('firstName').value.trim();
+      const lastName = document.getElementById('lastName').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const birthday = document.getElementById('birthday').value;
+      const course = document.getElementById('course').value;
+      const enrollDate = document.getElementById('enrollDate').value;
+      const message = document.getElementById('message').value.trim();
+
+      // build a nice text
+      let details = `*New enquiry from Lebolistic website*%0A`;
+      details += `*Name*: ${firstName} ${lastName}%0A`;
+      details += `*Contact*: ${phone}%0A`;
+      if (email) details += `*Email*: ${email}%0A`;
+      if (birthday) details += `*Birthday*: ${birthday}%0A`;
+      details += `*Course desired*: ${course}%0A`;
+      if (enrollDate) details += `*Enrollment date*: ${enrollDate}%0A`;
+      if (message) details += `*Message*: ${message}%0A`;
+
+      // whatsapp number (already with country code without +)
+      const whatsappNumber = '27736221875'; 
+      const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${details}`;
+
+      // open WhatsApp
+      window.open(url, '_blank');
+    });
+  </script>
 </body>
+</html>
